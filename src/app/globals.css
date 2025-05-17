@@ -1,26 +1,42 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  font-family: "Quicksand", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/*Range*/
+.range-sm::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00ADEF;
+  cursor: poiter;
+  box-shadow: 0px 0px 8px 0px #000000EB;
+}
+.range-sm::-moz-range-thumb{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00ADEF;
+  cursor: poiter;
+  box-shadow: 0px 0px 8px 0px #000000EB;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.play-audio .inner-button-pause{
+  display: none;
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.play-audio .inner-button-play.play .inner-icon-play{
+  display: none;
+}
+.play-audio .inner-button-play.play .inner-icon-pause{
+  display: block;
+}
+[song-id].active .inner-button-play{
+  background-color: #00ADEF;
+  border-color: #00ADEF;
 }
