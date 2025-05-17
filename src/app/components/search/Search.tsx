@@ -1,6 +1,6 @@
 "use client"
 import { useRouter, useSearchParams } from "next/navigation";
-import { handleClientScriptLoad } from "next/script";
+// import { handleClientScriptLoad } from "next/script";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 export const Search = () => {
     const router = useRouter();

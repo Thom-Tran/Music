@@ -1,6 +1,6 @@
 
 import { CardInfo } from "@/app/components/card/CardInfo";
-import { SongItem } from "@/app/components/song/SongItem";
+// import { SongItem } from "@/app/components/song/SongItem";
 import { SongItem2 } from "@/app/components/song/SongItem2";
 import { Title } from "@/app/components/title/Title";
 import { dbFirebase } from "@/app/firebaseConfig";

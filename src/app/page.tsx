@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { FaHeart, FaPlay } from "react-icons/fa6";
-import Link from "next/link";
+// import { FaHeart, FaPlay } from "react-icons/fa6";
+// import Link from "next/link";
 import { Title } from "./components/title/Title";
 import { SongItem } from "./components/song/SongItem";
 import { CardItem } from "./components/card/CardItem";
